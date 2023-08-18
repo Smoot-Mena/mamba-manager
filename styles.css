@@ -123,11 +123,11 @@ button {
 }
 
 input:checked + .slider {
-  background-color: rgb(38, 219, 38);
+  background-color: rgb(6, 192, 6);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px rgb(38, 219, 38);
+  box-shadow: 0 0 1px rgb(6, 192, 6);
 }
 
 input:checked + .slider:before {
@@ -277,11 +277,11 @@ tr:nth-of-type(even) {
 }
 
 .dark-mode > main > #table-header-section {
-  background-color: rgb(38, 219, 38);
+  background-color: rgb(6, 192, 6);
 }
 
 .dark-mode > main > section > #tableData > tbody > tr:nth-of-type(odd) {
-  background-color: rgb(190, 124, 0);
+  background-color: rgb(212, 141, 8);
 }
 
 .dark-mode > main > section > #tableData > tbody > tr:nth-of-type(even) {
