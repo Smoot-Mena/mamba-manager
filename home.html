@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+	<meta name="description" content="Mamba Manager home page">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Mena Smoot">
+	<link rel="stylesheet" href="styles.css" />
+	<link rel=""stylesheet href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&display=swap">
+  <script async="false" src="homeApp.js"></script>
+	<title>Mamba Manager</title>
+</head>
+
+<body>
+  <nav id="nav-bar">
+    <img id="mamba-logo" src="./images/google-mamba.png" alt="mamba logo">
+    <p id="darkmode">DARK MODE</p>
+    <!-- <button id="darkmode-button" onclick="darkMode ()">DARK MODE</button> -->
+    <label class="switch">
+      <input id="darkmode-checkbox" type="checkbox" onclick="darkMode()">
+      <span id="darkmode-slider" class="slider round"></span>
+    </label>
+     <ul>
+      <li class="nav-link"><a href="#settings">SETTINGS</a></li>
+      <li class="nav-link"><a href="#accounts">ACCOUNTS</a></li>
+      <li class="nav-link"><a href="#support">SUPPORT</a></li>
+      <li class="nav-link"><a href="#myaccount">
+        <img id="account-icon" src="./images/account-placeholder.png" alt="account icon"></a>
+      </li>
+    </ul>
+  </nav>
+	<main>
+    <section id="menus">
+      <ul>
+        <li class="menu-links"><a href="#electronics">ELECTRONICS</a></li>
+        <li class="menu-links"><a href="#books">BOOKS</a></li>
+        <li class="menu-links"><a href="#appliances">APPLIANCES</a></li>
+        <li class="menu-links"><a href="#furniture">FURNITURE</a></li>
+        <li class="menu-links"><a href="#cleaning">CLEANING SUPPLIES</a></li>
+      </ul>
+    </section>
+    <section id="sort-filter-options">
+      <section id="sort-filter">
+        <input id="search" type="search" name="search" placeholder="Search here">
+        <button>APPLY FILTER</button>
+        <button>RESET FILTER</button>
+        <button>APPLY SORT</button>
+        <button>RESET SORT</button>
+      </section>
+      <section id="options">
+        <button type="button">+ADD NEW</button>
+        <button>MASS DELETE</button>
+        <button>MAKE CHANGES</button>
+        <button>MORE OPTIONS</button>
+      </section>
+    </section>
+    <section id="table-header-section">
+      <h2 id="table-header">ELECTRONICS</h2>
+      <span id="table-total">TOTAL ELECTRONICS: 2</span>
+    </section>
+    <section>  
+      <table id="tableData">
+        <tbody>
+          <tr>
+            <th>NAME</th>
+            <th>BRAND</th>
+            <th>SERIAL #</th>
+            <th>ROOM LOCATION</th>
+            <th>CATEGORY</th>
+            <th>DATED ADDED</th>
+            <th>STATUS</th>
+          </tr>
+          <tr>
+            <td>Living room TV</td>
+            <td>Vizio</td>
+            <td>abcd1234</td>
+            <td>Living room</td>
+            <td>TV</td>
+            <td>5/1/2020</td>
+            <td>In Use</td>
+          </tr>
+          <tr>
+            <td>Bedroom TV</td>
+            <td>Sanyo</td>
+            <td>zxyw0987</td>
+            <td>Bedroom</td>
+            <td>TV</td>
+            <td>6/1/2021</td>
+            <td>In Use</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Living room TV",
+    "brand": "Visio",
+    "serial #": "abcd1234",
+    "room location": "living room",
+    "category": "TV",
+    "date added": "5/1/2020",
+    "status": "In Use"
+  },
+  {
+    "name": "Bedroom TV",
+    "brand": "Sanyo",
+    "serial #": "zxyw0987",
+    "room location": "bedroom",
+    "category": "TV",
+    "date added": "6/1/2021",
+    "status": "In Use"
+  }
+]
