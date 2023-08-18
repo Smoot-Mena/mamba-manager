@@ -3,6 +3,7 @@
 ===============*/
 
 let body = document.body;
+let darkmode = "dark-mode";
 let navBar = document.getElementById("nav-bar");
 let links = document.getElementsByTagName("a");
 let buttons = document.getElementsByTagName("button");
@@ -16,7 +17,19 @@ let turnedOn = "active";
 =================*/
 
 function darkMode() {
-  body.classList.toggle("dark-mode");
+  body.classList.toggle(darkmode);
+
+  // Caching dark mode setting to local storage
+  if (body.classList == darkmode) {
+    localStorage.setItem("ui", darkmode);
+  } else {
+    localStorage.removeItem("ui");
+  }
+
+  // Adds the dark mode class to the body tag
+  if (localStorage.getItem("ui")) {
+    body.classList.add(darkmode);
+  }
 }
 
 /*===========
